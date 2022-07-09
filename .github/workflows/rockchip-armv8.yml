@@ -28,6 +28,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
+  timeout-minutes: 1200
   Toolchain:
     runs-on: ubuntu-20.04
 
