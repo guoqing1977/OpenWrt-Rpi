@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build x86/64 openwrt
+name: Build x86/32 openwrt
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ on:
   #   types: started
 
 env:
-  CONFIG_FILE: config/x86/64.config
+  CONFIG_FILE: config/x86/32.config
   SOURCE_URL: https://github.com/immortalwrt/immortalwrt
   SOURCE_BRANCH: openwrt-18.06-k5.4
   DIY_SH: scripts/custom.sh
