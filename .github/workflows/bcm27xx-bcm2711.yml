@@ -29,7 +29,6 @@ env:
 
 jobs:
   Toolchain:
-    timeout-minutes: 1200
     runs-on: ubuntu-20.04
 
     outputs:
@@ -182,9 +181,9 @@ jobs:
 
   Build:
     needs: [Toolchain]
-    timeout-minutes: 1200
     runs-on: ubuntu-20.04
-
+    timeout-minutes: 1200
+    
     steps:
       - name: Restore Variables
         run: |
